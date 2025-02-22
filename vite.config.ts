@@ -3,9 +3,11 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import react from '@vitejs/plugin-react-swc';
 import mkcert from 'vite-plugin-mkcert';
 
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/reactjs-template',
+  base: '/pickleball-nha-trang',
   plugins: [
     // Allows using React dev server along with building a React application with Vite.
     // https://npmjs.com/package/@vitejs/plugin-react-swc
